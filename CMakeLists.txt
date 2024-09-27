@@ -37,7 +37,7 @@ option( USE_FREETYPE	"Use FreeType library"			ON )
 option( USE_MAGICK		"Use GraphicsMagick++ library"	ON )
 
 # Set the compiler flags
-add_definitions( -Wall -ansi -pedantic -pedantic-errors -mfloat-abi=hard -O2 -std=c++11 -Wno-long-long ) # -Wno-psabi
+add_definitions( -Wall -ansi -pedantic -pedantic-errors -O2 -std=c++11 -Wno-long-long ) # -Wno-psabi -mfloat-abi=hard
 
 # Set the include directories
 include_directories( ${RPI_HW_INCLUDE_DIR} )
